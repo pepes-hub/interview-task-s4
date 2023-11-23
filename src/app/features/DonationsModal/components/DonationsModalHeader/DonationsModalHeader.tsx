@@ -1,6 +1,6 @@
 import { Stack, Typography, useTheme } from "@mui/material";
 import { donationsModalStyles } from "./DonationsModalHeader.styles";
-import { GivingBlockSvg } from "../../../../assets/icons";
+import { GivingBlock } from "../../../../assets/icons";
 import { useTranslation } from "react-i18next";
 
 export const DonationsModalHeader = () => {
@@ -11,7 +11,7 @@ export const DonationsModalHeader = () => {
 
   return (
     <Stack sx={styles.container}>
-      <GivingBlockSvg />
+      <GivingBlock />
       <Stack sx={styles.titleContainer}>
         <Typography sx={styles.title}>{t("donationsModal.title")}</Typography>
         <Typography sx={styles.subtitle}>
