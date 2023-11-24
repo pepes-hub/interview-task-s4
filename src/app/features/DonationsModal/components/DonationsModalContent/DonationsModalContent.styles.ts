@@ -4,6 +4,9 @@ export const donationsModalContentStyles = (theme: Theme) => ({
   container: {
     padding: "32px 40px",
     gap: "32px",
+    [theme.breakpoints.down("sm")]: {
+      padding: "32px 24px",
+    },
   },
   valuesBlock: {
     flexDirection: "row",
@@ -11,6 +14,8 @@ export const donationsModalContentStyles = (theme: Theme) => ({
     gap: "24px",
     [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
+      gap: "16px",
+      marginBottom: "40px",
     },
   },
   buttonsContainer: {
