@@ -4,6 +4,6 @@ export const rootContainerStyles = {
   },
   content: {
     minHeight: "calc(100% - 80px)",
-    backgroundColor: "lightGray.main",
+    backgroundColor: "lightGrey.main",
   },
 };

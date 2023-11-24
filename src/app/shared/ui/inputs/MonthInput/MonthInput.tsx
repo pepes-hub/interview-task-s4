@@ -2,7 +2,7 @@ import { InputField } from "../InputField";
 import { Button, Stack, Typography } from "@mui/material";
 import moment, { Moment } from "moment";
 import { monthInputStyles } from "./MonthInput.styles";
-import { ChevronLeft, ChevronRight } from "../../../../assets/icons";
+import { IconSvg } from "../../IconSvg";
 
 interface MonthInputProps {
   label: string;
@@ -45,7 +45,7 @@ export const MonthInput = ({
           onClick={handleSetPreviousMonth}
           disabled={blockPreviousMonth}
         >
-          <ChevronLeft />
+          <IconSvg name={"chevronLeft"} />
         </Button>
         <Stack sx={monthInputStyles.labelsBlock}>
           <Typography sx={monthInputStyles.monthLabel}>{month}</Typography>
@@ -56,7 +56,7 @@ export const MonthInput = ({
           onClick={handleSetNextMonth}
           disabled={blockNextMonth}
         >
-          <ChevronRight />
+          <IconSvg name={"chevronRight"} />
         </Button>
       </Stack>
     </InputField>
