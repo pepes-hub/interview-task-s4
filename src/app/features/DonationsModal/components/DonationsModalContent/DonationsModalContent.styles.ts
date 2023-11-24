@@ -5,6 +5,14 @@ export const donationsModalContentStyles = (theme: Theme) => ({
     padding: "32px 40px",
     gap: "32px",
   },
+  valuesBlock: {
+    flexDirection: "row",
+    marginBottom: "32px",
+    gap: "24px",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+    },
+  },
   buttonsContainer: {
     padding: "8px",
     flexDirection: "row",
