@@ -39,8 +39,9 @@ export const MonthInput = ({
 
   return (
     <InputField label={label}>
-      <Stack sx={monthInputStyles.input}>
+      <Stack sx={monthInputStyles.input} data-cy={"month-input"}>
         <Button
+          data-cy={"month-input-set-previous-month"}
           sx={monthInputStyles.button}
           onClick={handleSetPreviousMonth}
           disabled={blockPreviousMonth}
@@ -52,6 +53,7 @@ export const MonthInput = ({
           <Typography sx={monthInputStyles.yearLabel}>{year}</Typography>
         </Stack>
         <Button
+          data-cy={"month-input-set-next-month"}
           sx={monthInputStyles.button}
           onClick={handleSetNextMonth}
           disabled={blockNextMonth}

@@ -20,6 +20,7 @@ export const AmountInput = ({ label, value, onChange }: AmountInputProps) => {
   return (
     <InputField label={label}>
       <TextField
+        data-cy="amount-input"
         value={value}
         onChange={handleOnChange}
         placeholder={"0.00"}

@@ -45,7 +45,7 @@ export const DonationsModalContent = () => {
             {formattedTotalAmount}
           </Typography>
         </Stack>
-        <Box sx={styles.summary}>
+        <Box sx={styles.summary} data-cy={"summary-text"}>
           <Typography sx={styles.summaryLabel}>
             <Trans
               i18nKey="donationsModal.summary"
