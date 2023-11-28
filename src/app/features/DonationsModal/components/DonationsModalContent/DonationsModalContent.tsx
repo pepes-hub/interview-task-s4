@@ -3,7 +3,7 @@ import { donationsModalContentStyles } from "./DonationsModalContent.styles";
 import { Trans, useTranslation } from "react-i18next";
 import moment, { Moment } from "moment";
 import { SHORT_DATE_FORMAT } from "../../../../constants/date";
-import { amountFormat } from "../../../../shared/helpers/amountFormat";
+import { amountFormat } from "../../../../shared/helpers/amountFormat/amountFormat";
 import { AmountInput } from "../../../../shared/ui/inputs/AmountInput";
 import { useState } from "react";
 import { MonthInput } from "../../../../shared/ui/inputs/MonthInput";
