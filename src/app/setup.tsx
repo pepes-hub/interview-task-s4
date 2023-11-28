@@ -1,16 +1,15 @@
-import { RootContainer } from "./shared/ui/RootContainer";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { muiTheme } from "./theme/muiTheme";
-import { DonationsModal } from "./features/DonationsModal";
+import { RootContainer } from "./shared/ui/RootContainer";
+import { ReactNode } from "react";
 import "./libraries/i18n/I18n";
+import "./index.css";
 
-export const App = () => {
+export const createApp = (children: ReactNode) => {
   return (
     <ThemeProvider theme={muiTheme}>
       <CssBaseline>
-        <RootContainer>
-          <DonationsModal />
-        </RootContainer>
+        <RootContainer>{children}</RootContainer>
       </CssBaseline>
     </ThemeProvider>
   );
